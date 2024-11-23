@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E2C2C"
+    tools:context=".SelecaoQuantidadeActivity">
+
+
+    <TextView
+        android:id="@+id/tvProdutoSelecionado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Produto Selecionado"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+
+    <View
+        android:id="@+id/quadrado"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="152dp"
+        android:background="#D3A373"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvProdutoSelecionado" />
+
+
+
+    <ImageView
+        android:id="@+id/ivImagemProduto"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/fruta4"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="205dp" />
+
+    <RadioGroup
+        android:id="@+id/rgQuantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/quadrado"
+        app:layout_constraintVertical_bias="0.3">
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quadrado">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAdicionarCarrinho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF5722"
+        android:text="Adicionar ao Carrinho"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="487dp" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF5722"
+        android:text="Cancelar"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="552dp" />
+
+    <RadioButton
+        android:id="@+id/rb15kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1,5kg"
+        tools:layout_editor_absoluteX="263dp"
+        tools:layout_editor_absoluteY="416dp" />
+
+    <RadioButton
+        android:id="@+id/rb1kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1kg"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="416dp" />
+
+    <RadioButton
+        android:id="@+id/rb500g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500g"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="416dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
